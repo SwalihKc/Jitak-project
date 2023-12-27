@@ -93,7 +93,7 @@ class _HomePageState extends State<HomePage> {
                 BottomNavigationBarItem(
                     icon: InkWell(
                       onTap: () {
-                      Get.to(const SecondPage());//     Here navigating to the secondpage  ///
+                      Get.to(()=> SecondPage());//     Here navigating to the secondpage  ///
                       },
                       child: Image.asset(
                         "assets/office bag.png",
@@ -115,7 +115,7 @@ class _HomePageState extends State<HomePage> {
                   icon: InkWell(
                     onTap: () {
                       Get.to(
-                          const ThirdPage()); //---------Here Navigating to Thirdpage--------//
+                          ()=> ThirdPage()); //---------Here Navigating to Thirdpage--------//
                     },
                     child: Image.asset(
                       "assets/profile.png",

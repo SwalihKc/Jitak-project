@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_connect/http/src/utils/utils.dart';
+import 'package:get/get_navigation/get_navigation.dart';
 import 'package:jitak/view/mobile/edit_store_profile_mobile.dart';
 import 'package:jitak/view/mobile/home_page_mobile.dart';
 import 'package:jitak/view/mobile/stamb_card_details_mobile.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
       home:   ScreenTypeLayout.builder(
           mobile: (p0) => const HomePage(),
           tablet: (p0) => const HomePageTablet()
+
         )
         );
   }
